@@ -6,13 +6,13 @@ const NavBar = () => {
             </a>
 
             <ul className="flex gap-[25px] list-none">
-            <li><a href="#" class="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">Discover</a></li>
-                <li><a href="#" class="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">Plan</a></li>
-                <li><a href="#" class="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">Chat-Bot</a></li>
-                <li><a href="#" class="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">About Us</a></li>
+                <li><a href="#discover" className="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">Discover</a></li>
+                <li><a href="#" className="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">Plan</a></li>
+                <li><a href="#" className="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">Chat-Bot</a></li>
+                <li><a href="#" className="text-black no-underline text-[17px] font-semibold hover:text-[#4DAFE3] hover:underline hover:text-[18px] transition-all duration-300">About Us</a></li>
             </ul>
 
-            <a href="" class="bg-[#4DAFE3] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3998c7] transition duration-300">Login</a>
+            <button type="button" className="text-white bg-[#4DAFE3] hover:bg-[#3998c7] focus:ring-4 focus:ring-[#4DAFE3]-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#4DAFE3]-600 dark:hover:bg-[#4DAFE3]-700 focus:outline-none dark:focus:ring-[#4DAFE3]-800">Login</button>
         </nav>
     );
 };
