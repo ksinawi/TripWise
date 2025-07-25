@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.landing-page {
+    background-image: url('../images/landing-page.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+  }
+  
+  .landing-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .landing-page-text {
+    color: white;
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .landing-page-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-page-p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+  }
+  
+  .text-section-button {
+    background-color: rgba(0, 128, 128, 0.6);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .text-section-button:hover {
+    background-color: teal;
+  }
+  
+  .landing-page-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  
+  .card1 {
+    height: 600px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
