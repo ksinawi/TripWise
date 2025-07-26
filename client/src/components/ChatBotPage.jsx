@@ -25,13 +25,23 @@ const ChatBotPage = () => {
 
         try {
             const response = await fetch(import.meta.env.VITE_API_URL, requestOptions);
-            console.log("Reached here");
             const data = await response.json();
             
             if(!response.ok) throw new Error(data.error.message || "Error");
+            console.log(data);
+            
+            const parts = data.candidates[0].content.parts;
 
-            const apiResponseText = data.candidates[0].contents.parts[0].text.replace(/\*\*(.*?)\*\*/g, '$1').trim();
+            let apiResponseText = '';
+            
+            if (parts.length > 1) {
+                apiResponseText = parts[1].text.replace(/\*\*(.*?)\*\*/g, '$1').trim();
+            } else {
+                apiResponseText = parts[0].text.replace(/\*\*(.*?)\*\*/g, '$1').trim();
+            }
+
             updateHistory(apiResponseText);
+
         } catch (err) {
             console.log(err);
         }
@@ -58,7 +68,7 @@ const ChatBotPage = () => {
             setChatHistory(updatedChatWithThinking);
         
             generateBotResponse(updatedChatWithThinking);
-          }, 600);
+          }, 300);
 
     }
 
