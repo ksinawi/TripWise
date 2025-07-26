@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className='tags-section'>
                 <ul className='nav-list'>
                     <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Discover</a></li>
                     <li><a href='#'>Plan</a></li>
                     <li><a href='#'>ChatBot</a></li>
                     <li><a href='#'>Contact Us</a></li>
