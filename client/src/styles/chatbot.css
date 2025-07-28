@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(0, 111, 108) !important;
+    background-color: #006f6c !important;
     overflow-y: hidden;
 }
 
@@ -47,6 +47,7 @@ body {
     background-color: white;
     padding: 3px;
     margin-left: 20px;
+    margin-right: 5px;
 }
 
 .header-name {

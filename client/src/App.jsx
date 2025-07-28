@@ -1,5 +1,4 @@
 import ChatBotPage from "./components/ChatBotPage";
-import DiscoverPage from "./components/DiscoverPage";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 
@@ -11,7 +10,6 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/discover' element={<DiscoverPage />} />
         <Route path='/chatbot' element={<ChatBotPage />} />
       </Routes>
     </Router>

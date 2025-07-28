@@ -1,6 +1,13 @@
 body {
     overflow-x: hidden;
     font-family: sans-serif;
+    overflow-y: auto;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .landing-page {
@@ -125,3 +132,7 @@ body {
   width: 20px;
 }
   
+.discover-section {
+  display: flex;
+  background-color: white;
+}

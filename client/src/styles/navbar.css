@@ -14,6 +14,14 @@ body {
     top: 0;
     z-index: 999;
   }
+
+  .navbar a {
+    color: white;
+  }
+
+  .navbar-scrolled a{
+    color: black;
+  }
   
   .logo-section {
     display: flex;
@@ -37,7 +45,6 @@ body {
   .nav-list li a {
     text-decoration: none;
     font-size: 16px;
-    color: white;
     transition: 0.3s ease;
     cursor: pointer;
   }

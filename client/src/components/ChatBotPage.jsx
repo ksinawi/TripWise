@@ -1,12 +1,14 @@
 import '../styles/chatbot.css';
 import robot from '../images/chatbot.png';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ChatMessages from './ChatMessages';
 
 const ChatBotPage = () => {
 
     const [chatHistory, setChatHistory] = useState([]);
+
+    const chatBodyRef = useRef();
 
     const generateBotResponse = async (chatHistory) => {
         const updateHistory = (text) => {
@@ -72,6 +74,10 @@ const ChatBotPage = () => {
 
     }
 
+    useEffect(() => {
+        chatBodyRef.current.scrollTo({top: chatBodyRef.current.scrollHeight, behaviour: "smooth"});
+    }, [chatHistory]);
+
     return (
         <section className='chatbot-grid'>
             <div className='chatbot-container'>
@@ -81,11 +87,8 @@ const ChatBotPage = () => {
                 </div>
                 
                 <div className='container-main'>
-                    <div className="chat-window">
-                        <div className="chat-row bot">
-                            <img src={robot} className="chat-avatar" alt="AI" />
-                            <div className="chat-message bot">Hi! How can I help you today?</div>
-                        </div>
+                    <div ref={chatBodyRef} className="chat-window">
+                        <ChatMessages chat={{ role: 'model', text: 'Hi! How can I help you today?' }} />
 
                         {chatHistory.map((message, index) => (
                             <ChatMessages key={index} chat={message}/>
