@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/discover-card.css';
 
 const DiscoverCard = ({ country }) => {
@@ -8,7 +9,9 @@ const DiscoverCard = ({ country }) => {
             <div className='discover-text-grid'>
                 <p className='discover-country'>{country.countryCity}, {country.countryName}</p>
                 <p className='discover-location'>{country.attraction}</p>
-                <button className='discover-button'>Plan Now</button>
+                <Link to={'/plan'}>
+                    <button className='discover-button'>Plan Now</button>
+                </Link>
             </div>
         </div>
     );

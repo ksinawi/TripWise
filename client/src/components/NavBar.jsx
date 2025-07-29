@@ -36,9 +36,9 @@ const Navbar = () => {
                 <ul className='nav-list'>
                     <li><a href='/'>Home</a></li>
                     <li><a href='#discover'>Discover</a></li>
-                    <li><a href='#'>Plan</a></li>
+                    <li><a href='/plan'>Plan</a></li>
                     <li><a href='/chatbot'>ChatBot</a></li>
-                    <li><a href='#'>Contact Us</a></li>
+                    <li><a href='#contact'>Contact Us</a></li>
                 </ul>
             </div>
             <div className='login-section'>
