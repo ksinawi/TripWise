@@ -7,6 +7,7 @@ import arrowRight from '../images/arrow-right.png';
 
 import React, { useRef, useState } from 'react';
 import DiscoverPage from './DiscoverPage';
+import ContactPage from './ContactPage';
 
 const LandingPage = () => {
 
@@ -34,7 +35,7 @@ const LandingPage = () => {
 
   return (
     <div className='page-wrapper'>
-        <div className="landing-page">
+        <div className="landing-page" id='home'>
             <div className="landing-page-text">
                 <p className="landing-page-title">
                 With TripWise <br/>Travel Around The World
@@ -69,7 +70,11 @@ const LandingPage = () => {
         </div>
 
         <div id='discover' className="discover-section">
-                <DiscoverPage/>
+            <DiscoverPage/>
+        </div>
+
+        <div id='contact' className='contact-section'>
+            <ContactPage/>
         </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import '../styles/navbar.css';
 import logo from '../images/logo-icon.png';
+import { Link } from 'react-router-dom';
 
 import React, { useState, useEffect } from 'react';
 
@@ -34,11 +35,11 @@ const Navbar = () => {
             </div>
             <div className='tags-section'>
                 <ul className='nav-list'>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='#discover'>Discover</a></li>
-                    <li><a href='/plan'>Plan</a></li>
-                    <li><a href='/chatbot'>ChatBot</a></li>
-                    <li><a href='#contact'>Contact Us</a></li>
+                  <li><Link to="/#home">Home</Link></li>
+                  <li><Link to="/#discover">Discover</Link></li>
+                  <li><Link to="/plan">Plan</Link></li>
+                  <li><Link to="/chatbot">ChatBot</Link></li>
+                  <li><Link to="/#contact">Contact Us</Link></li>
                 </ul>
             </div>
             <div className='login-section'>

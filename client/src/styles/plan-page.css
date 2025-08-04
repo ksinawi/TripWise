@@ -39,8 +39,9 @@
     color: #333;
     margin-bottom: 0.3rem;
   }
-  
+
   .plan-input {
+    color: black;
     padding: 0.7rem 1rem;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -69,4 +70,28 @@
   .plan-button:hover {
     background-color: #006666;
   }
+
+  .itinerary-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .itinerary-box {
+    white-space: pre-wrap;
+    line-height: 1.6;
+  }
+  
+  .itinerary-line {
+    margin-bottom: 0.5rem;
+  }
+  
   
